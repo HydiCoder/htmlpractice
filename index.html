@@ -7,9 +7,11 @@
     <title>practice01</title>
 </head>
 <body>
-    <h1>一、一级标题(h1-h6)</h1>
+    <div id="top"> <a href="#down">回到底部</a> </div>
+    
+    <h1 id="return">一、一级标题(h1-h6)</h1>
     <em> <strong> <p>It is my first time to writting a html file.</p> </strong> </em>
-    <div>first block</div>
+   
     
     <h4>二、alt 替换文本 图像显示不出来的时候用文字替换</h4>
     <img src="images/universe1.png" alt="宇宙">
@@ -17,18 +19,37 @@
     <h4>三、title 提示文本 鼠标放上去后显示的文字</h4>
     <img src="images/universe2.png" alt="宇宙" title="宇宙">
     
-    <h4>四、设置图像属性</h4>
+    <h4>四、设置图像属性 宽400 高150</h4>
     <img src="images/universe3.png" alt="宇宙" title="宇宙" width="400" 
     height="150" border="15">
 
     <h4>五、上一级路径用../表示</h4>
+    <img src="../browser_images/baidu.jpg" alt="百度" title="百度">
 
     <h4>六、超链接标签之外部链接</h4>
     <a href="https://hydicoder.github.io/htmlpractice/" target="_blank">我的网页</a>
 
     <h4>七、超链接之内部链接</h4>
-    <a href="sport_demo.html">体育新闻练习链接</a>
+    <a href="sport_demo.html" target="_blank">体育新闻练习链接</a>
 
 
+    <h4>八、超链接之空链接</h4>
+    <a href="#" target="_blank">这是一个空链接</a>
+
+    <h4>九、超链接之下载链接</h4>
+    href后接压缩包或者.exe等文件的路径<br>
+    <a href="#" target="_blank">下载地址:xxx(暂时为空)</a>
+
+    <h4>十、超链接之如何实现给当前网页的元素添加链接</h4>
+    <a href="https://www.baidu.com" target="_blank"><img src="../browser_images/baidu.jpg" alt="百度" title="百度"></a>
+
+    <h4>十一、锚点链接</h4>
+    <a href="#return">回到一级标题处</a>
+
+    <h4>十二、注释标签</h4>
+    <p> &lt !--&nbsp&nbsp&nbsp&nbsp&nbsp-- &gt中间加注释内容 </p>
+
+
+    <div id="down"><a href="#top">回到顶部</a></div>
 </body>
 </html>
