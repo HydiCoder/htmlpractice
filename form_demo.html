@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单相关标签和属性的练习</title>
+</head>
+<body>
+    <!--由于没有后台服务器,暂时只对表单的用法作简单的了解-->
+    <form action="#" method="post" name="form1">
+        <!-- text为文本框 -->
+        name:<input type="text" name="username"><br>
+        <!-- password为密码框 -->
+        passwd:<input type="password" name="passwd" maxlength="16"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*最长输入16个字符<br>
+        <!-- radio为圆形选框 可多选
+            若要实现多个选一个要定义相同的name-->
+        <!-- 圆形框和方形框可以定义checked属性
+            目的是打开页面时默认选中这些属性 -->
+        gender: &nbsp;&nbsp;&nbsp;<input type="radio" name="sex" id="sex1" value="男"> <label for="sex1">男</label> &nbsp;&nbsp;
+        <input type="radio" name="sex" id="sex2" value="女"> <label for="sex2">女</label><br>
+        <!-- checkbox为方形选框 可多选-->
+        habits: <input type="checkbox" name="eat"> eat &nbsp;&nbsp;
+        <input type="checkbox" name="sleep"> sleep &nbsp;&nbsp;
+        <input type="checkbox" name="play"> play
+        <br>
+        省: <select name="sheng">
+            <option selected="selected">请选择省份</option>
+            <option>湖北省</option>
+            <option>湖南省</option>
+            <option>广东省</option>
+        </select>
+        市:<select>
+            <option selected="selected">请选择市</option>
+            <option value="">1</option>
+            <option value="">2</option>
+        </select>
+        <br>
+        <!-- 提交按钮，点击后会把表单域中的表单元素(控件)的值传到后台的服务器上 -->
+        <input type="submit" name="commit" value="注册">
+        <!-- 重置按钮,将表单元素的值全部重置 -->
+        <input type="reset" name="reset" value="重新填写">
+        <!-- 按钮的设置 -->
+        <br>
+        <input type="button" name="button" value="发送验证码">
+        <br>
+        <!-- 文件的上传 -->
+        上传头像: <input type="file" name="file">
+        <br>
+        提交反馈:
+        <textarea rows="3" cols="30">请输入反馈
+            
+        </textarea><br>
+        <input type="checkbox" name="默认勾选" checked>同意本协议及相关条款
+    </form>
+</body>
+</html>

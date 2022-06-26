@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格相关标签和属性的练习</title>
+</head>
+<body>
+    <h4>1.表格练习</h4>
+    <!--align是表格对齐方式 
+        cellpadding是文字与单元格之间的距离
+        cellspacing是单元格之间的距离
+        表格还有height 和width 等属性 -->
+    <table align="center" border="2" cellpadding="12" cellspacing="0">
+    <thead>
+        <tr>
+            <th>姓名</th> 
+            <th>性别</th> 
+            <th>年龄</th>
+            <th>照骗</th>
+        </tr>
+    </thead>
+    <!-- 在合并单元格时，注意合并完后删除多余的单元格 -->
+    <tbody>
+        <tr> 
+            <td>DJ伟</td> <td>男</td> <td>21</td> 
+            <td rowspan="3"><a href="#" target="_blank">photos</a></td>
+        </tr>
+        <tr> <td>super伟</td> <td>男</td> <td>18</td> </tr>
+        <tr> <td>bigmouse伟</td> <td>男</td> <td>19</td></tr>
+    </tbody>
+    </table>
+</body>
+</html>
